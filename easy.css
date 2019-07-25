@@ -1,0 +1,187 @@
+body
+{
+	margin:0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+
+	font-family: sans-serif;
+
+}
+}
+ul
+{
+list-style-type: none;
+padding: 0;
+margin: 0;
+text-align: right;
+width: 10em;
+margin-top: 20px;
+
+}
+
+li
+{
+background-image: url(arrow.gif);
+background-repeat: no-repeat;
+background-position: 100% .4em;
+padding: 10px 20px 20px 20px; ;
+margin: 1em 0;
+
+}
+
+
+ul li a{
+	text-decoration: none;
+	color: #000;
+	padding: 5px 20px;
+	
+	transition: 0.5s ease;
+}
+ul li a:hover{
+	
+	background:linear-gradient(#03001e,#7303c0,#ec38bc,#fdeff9);
+	color: #FFf;
+}
+
+
+
+
+
+.quote
+{
+	width: 1200px;
+	min-height: 400px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	z-index: 2;
+}
+.quote .box
+{
+	margin: 20px;
+	padding: 30px 10px 10px 10px;
+	top: -50px;
+	position: relative;
+	width: 300px;
+	height: 250px;
+	grid-row-end: 400px;
+	background: #ccc;
+	overflow: hidden;
+	transition: 0.5s;
+	z-index: 2;
+	box-sizing: border-box;
+	padding: 30px;
+	box-shadow:-10px 25px 50px rgba(0,0,0,.2);
+	border-radius: 20px;
+
+}
+.quote .box:hover
+{
+	box-shadow:-20px 50px 100px rgba(0,0,0,.5);
+}
+.quote .box p
+{
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+}
+.quote .box:hover p
+{
+	color: #fff;
+}
+.quote .box h2
+{
+	position: absolute;
+	bottom: 40px;
+	right: 30px;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+.quote .box:hover h2
+{
+	color: #fff;
+}
+.quote .bg
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	opacity: 0;
+	transform: 0.5s;
+	pointer-events: none;
+	width: 100%;
+	height: 100%;
+}
+.quote .box.box1:hover ~ .bg,
+.quote .box.box1:hover
+{
+	opacity: 1;
+		background:linear-gradient(#ffd89b,#19547b);
+
+}
+.quote .box.box2:hover ~ .bg,
+.quote .box.box2:hover
+{
+	opacity: 1;
+	background:linear-gradient(#ff6e7f,#bfe9ff);
+
+}
+.quote .box.box3:hover ~ .bg,
+.quote .box.box3:hover
+{
+	opacity: 1;
+	background:linear-gradient(#5A3F37,#2C7744);
+
+}
+.quote .box.box4:hover ~ .bg,
+.quote .box.box4:hover
+{
+	opacity: 1;
+	background:linear-gradient(#6D6027,#D3CBB8);
+
+}
+.quote .box.box5:hover ~ .bg,
+.quote .box.box5:hover
+{
+	opacity: 1;
+	background:linear-gradient(#283048,#859398);
+
+}
+.quote .box.box6:hover ~ .bg,
+.quote .box.box6:hover
+{
+	opacity: 1;
+	background:linear-gradient(#03001e,#7303c0,#ec38bc,#fdeff9);
+}
+.quote .box:before
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: -50%;
+	width: 100%;
+	height: 100%;
+	background:rgba(255,255,255,.2);
+	pointer-events: none;
+}
+.quote .box:after
+{
+	content: url();
+	content: fill;
+	position: absolute;
+	bottom: 10%;
+	right: 10%;
+	opacity: 0.5;
+	background:rgba(255,255,255,.2);
+	pointer-events: none;
+}
+
+
+/////////////////////////////////////////////////////////////
+
+
